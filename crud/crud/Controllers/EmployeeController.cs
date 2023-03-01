@@ -46,7 +46,7 @@ namespace crud.Controllers
         {
             var emp = _crudService.Update(id,request);
             if (emp == null)
-                return NotFound("Error");
+                return NotFound("Employee not found");
             return Ok(emp);
 
         }
